@@ -1,0 +1,65 @@
+.Countdown-timer{
+    padding: 10px;
+    margin: 100px 200px 200px;
+    height: 350px;
+    width :50em; 
+    background-color: aqua;
+    border-radius: 10vh;
+    display:flexbox ;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+ h1 {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+} 
+
+label{
+    height: 110px;
+    width: 550px;
+    display: inline-flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    font-weight: 300;
+    font-size: xS-large;
+
+} 
+
+input[type="type"] {
+    text-shadow: 1000cqmax pink;
+    background-color: palevioletred;
+}
+
+#countdown{
+    margin-top: -7%;
+    margin-left: 20%;
+    /* background-color: blueviolet; */
+    height: 70px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+   
+}
+
+button{
+    margin-top: -10%;
+    margin-left: 20%;
+    background-color: red;
+    height: 70px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+   
+}
+/* #taming{
+    height: 0%;
+    
+    justify-content: center;
+    
+} */
