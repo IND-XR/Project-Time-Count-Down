@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("datetime");
   const count = document.getElementById("countdown");
-  const pause = document.getElementById("stop");
+  const pause = document.getElementById("save");
+  const timesave = document.getElementById("timesave");
 
   function calculateTimeRemaining() {
     const tragetDate = new Date(input.value);
@@ -30,15 +31,58 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(timeremaining);
   }
 
+
   function startCountdown() {
-    updateCounterdown(); // there use in one second code is runing
+    updateCounterdown();  // update immediately
     setInterval(updateCounterdown, 1000);
   }
+  input.addEventListener('change',startCountdown);
+  
+  pause.addEventListener('click',function(){
+    const timing =  input;
+    count.innerText = timing;
 
-  input.addEventListener("change", startCountdown);
+    // timesave.addEventListener.innerText(`save Time ${input}`);
+    console.log("run");
+    console.log(timing);
+  });
+
+  timesave.addEventListener("copy",function(){
+    console.log("run1");
+  })
+
+  
+
+
+
+
 
 
 });
+
+
+//   document.getElementById("navigateBtn").addEventListener("click",function(){
+//     console.log("run");
+
+
+// input.addEventListener("change", startCountdown);
+
+// pause.addEventListener("click",function(){
+//   clearInterval(countdownInterval);
+//   countdownInterval=startCountdown;
+//   console.log("countdown pasued");
+
+// })
+
+  // function startCountdown() {
+  //   updateCounterdown(); // update immediately
+
+  //   if(countdownInterval){
+  //     clearInterval(countdownInterval);
+  //   }
+  //   countdownInterval=setInterval(updateCounterdown, 1000);
+  // }
+
 
 // function startCountdown() {
 //     updateCounterdown();  // there use in one second code is runing
@@ -46,3 +90,41 @@ document.addEventListener("DOMContentLoaded", function () {
 //   }
 
 //   input.addEventListener('change', startCountdown);
+
+
+
+
+
+
+//  *******************stop  
+
+
+
+
+// function startCountdown() {
+//   updateCounterdown();  // // update immediately
+//   countdownInterval=setInterval(updateCounterdown, 1000);
+// }
+
+// input.addEventListener("change",function(){
+//   if(countdownInterval !== null){      // if it id propet same then it will be false
+//     clearInterval(countdownInterval);
+//     console.log(countdownInterval)
+// }
+// startCountdown();
+// pause.textContent="pause";
+
+// });
+
+// pause.addEventListener("click",function(){
+// if(countdownInterval !== null){
+//   clearInterval(countdownInterval);
+//   countdownInterval = null;
+//   pause.textContent="start";
+//   console.log("countdown paused")
+// }else{
+//   startCountdown();
+//   pause.textContent="pause";
+//   console.log("counterdown")
+// }
+// });
