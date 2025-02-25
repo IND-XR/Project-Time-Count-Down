@@ -37,28 +37,34 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateCounterdown, 1000);
   }
   input.addEventListener('change',startCountdown);
-  
+
+
   pause.addEventListener('click',function(){
-    const timing =  input;
-    count.innerText = timing;
+    const timing = count.innerHTML;
 
-    // timesave.addEventListener.innerText(`save Time ${input}`);
-    console.log("run");
-    console.log(timing);
+    const savedTime = document.createElement("div");
+    savedTime.innerText = timing
+
+    const text = document.createElement("textarea");
+    document.innerText = timing
+
+    timesave.appendChild(savedTime,text);
   });
-
-  timesave.addEventListener("copy",function(){
-    console.log("run1");
-  })
-
-  
-
-
-
-
-
-
 });
+
+
+
+// pause.addEventListener('click',function(){
+//   const timing = count.innerHTML;
+
+
+//   const savedTimeE = document.createElement("div");
+//   savedTimeE.textContent = timing;
+
+//   timesave.appendChild(savedTimeE);
+
+//   console.log("save timing",timing);
+
 
 
 //   document.getElementById("navigateBtn").addEventListener("click",function(){
