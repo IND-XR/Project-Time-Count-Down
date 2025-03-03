@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="flex w-full border-b- border-black-600 shadow-xl">
+    <img class="text-3xl relative left-11 h-20 p-0 m-0" src="src/filan.png" alt="" />
+    <!--  // w-20   bg-orange-50 -->
+    <h2 class="text-3xl relative left-7 w-90 font-bold h-20 p-5 m-0">
+      Time Tracker
+    </h2>
+    <div class="flex justify-start place-content-center gap-8 relative h-20 left-7 p-5 w-full">
+      <a class="text-xl font-medium place-content-center text-gray-500 hover:underline" href="">
+        Home</a>
+      <a class="text-xl font-medium place-content-center text-gray-500 hover:underline" href="" id ="navigateBtn">Track</a>
+      <a class="text-xl font-medium place-content-center text-gray-500 hover:underline" href="">Results</a>
+    </div>
+    <button class="bg-red-500 w-80 relative rounded-md h-10 p-0 m-5 ring-2 ring-blue-500 text-white float-end">
+      ! Sign Up
+    </button>
+  </nav>
+  <h1 class=" flex justify-center p-10 m-5 mt-6 font-bold text-3xl ">Countedown Timer</h1>
+  
+  <section class="">
+      <div class="Countdown-timerh-30  p-15 m-20 -mt-6 rounded-3xl  border-black-9200 shadow-2xl ">
+        <!-- <h1 class=" flex justify-center text-2xl text-red-400 ">Countedown Timer</h1> -->
+        <label class=" font-medium italic" for="datetime">Set the target date and time to start the timer." </label>
+        <input type="datetime-local" id="datetime">
+        <div class="flex justify-center relative  align-center font-bold w-35 text-3xl mt-10 underline-offset-2  border-b- border-black-600 shadow-xl " id="countdown "> anmol  </div>
+      </div>
+
+  </section>
+
+
+  <section  class=" h-9xl w-full bg-slate-600">
+    <footer class="bg-white py-10">
+      <div class="max-w-screen-xl mx-auto px-4">
+        
+        <!-- Logo & Newsletter -->
+        <div class="flex flex-col items-center space-y-6">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-2">
+            <!-- Replace with your actual logo image -->
+            <img
+              src="src/e31bd0c6-6939-4b47-8a25-81059742e862.png"
+              alt="Logo"
+              class="h-10 w-10"
+            />
+            <span class="text-2xl font-bold text-gray-800">Logo</span>
+          </a>
+          
+          <!-- Newsletter Subscription -->
+          <div class="flex flex-col items-center">
+            <p class="text-base font-medium text-gray-700 mb-2">
+              Subscribe to our newsletter
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Input your email"
+                class="border border-gray-300 rounded-l-md px-4 py-2 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              />
+              <button
+                class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-r-md"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Footer Links -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mt-10 text-center sm:text-left">
+          <div>
+            <h3 class="text-sm font-semibold text-gray-700 uppercase mb-2">Product</h3>
+            <ul class="space-y-1">
+              <li><a href="#" class="text-gray-500 hover:text-gray-900">Features</a></li>
+              <li><a href="#" class="text-gray-500 hover:text-gray-900">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-700 uppercase mb-2">Resources</h3>
+            <ul class="space-y-1">
+              <li><a href="#" class="text-gray-500 hover:text-gray-900">Blog</a></li>
+              <li><a href="#" class="text-gray-500 hover:text-gray-900">User guides</a></li>
+              <li><a href="#" class="text-gray-500 hover:text-gray-900">Webinars</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-700 uppercase mb-2">Company</h3>
+            <ul class="space-y-1">
+              <li><a href="#" class="text-gray-500 hover:text-gray-900">About us</a></li>
+              <li><a href="#" class="text-gray-500 hover:text-gray-900">Contact us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-700 uppercase mb-2">Plans &amp; Pricing</h3>
+            <ul class="space-y-1">
+              <li><a href="#" class="text-gray-500 hover:text-gray-900">Personal</a></li>
+              <li><a href="#" class="text-gray-500 hover:text-gray-900">Start up</a></li>
+              <li><a href="#" class="text-gray-500 hover:text-gray-900">Organization</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Divider -->
+        <hr class="my-8 border-gray-200" />
+  
+        <!-- Footer Bottom -->
+        <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
+          
+          <!-- Language Selector -->
+          <div class="flex items-center space-x-2">
+            <label for="language" class="text-sm text-gray-500">Language:</label>
+            <select
+              id="language"
+              class="border border-gray-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+            >
+              <option>English</option>
+              <option>Spanish</option>
+              <option>French</option>
+              <!-- Add more languages as needed -->
+            </select>
+          </div>
+  
+          <!-- Copyright & Links -->
+          <div class="text-sm text-gray-500 text-center">
+            &copy; 2024 Brand, Inc. &middot;
+            <a href="#" class="hover:underline">Privacy</a> &middot;
+            <a href="#" class="hover:underline">Terms</a> &middot;
+            <a href="#" class="hover:underline">Sitemap</a>
+          </div>
+  
+          <!-- Social Icons -->
+          <div class="flex space-x-4">
+            <!-- Replace text with actual icons or links to social platforms -->
+            <a href="#" class="text-gray-500 hover:text-gray-900">FB</a>
+            <a href="#" class="text-gray-500 hover:text-gray-900">TW</a>
+            <a href="#" class="text-gray-500 hover:text-gray-900">YT</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>   
+
+</html>
