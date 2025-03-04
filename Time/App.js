@@ -22,16 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const second = Math.floor((distance / 1000) % 60);
 
     return `${day}d ${hour}h ${minutes}m ${second}s `;
-  //   const day = Math.floor(distance / (1000 * 60 * 60 * 24)); // ( * value used null /   / is used value is 0 )  )
-
-  //   const hour = Math.floor((distance / (1000 * 60 * 60)) % 24);
-
-  //   const minutes = Math.floor((distance / 1000 / 60) % 60);
-
-  //   const second = Math.floor((distance / 1000) % 60);
-
-  //   return `${day}d ${hour}h ${minutes}m ${second}s `;
-  // }
   }
 
   function updateCounterdown() {
