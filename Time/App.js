@@ -48,6 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const text = document.createElement("textarea");
     document.innerText = timing
 
+    save.addEventListener('click',function(){
+      textstore.innerText = text
+      console.log("hello")
+
+    })
+
+  
+
     timesave.appendChild(savedTime,text);
   });
 });
