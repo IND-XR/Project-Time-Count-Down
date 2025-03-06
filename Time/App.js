@@ -41,24 +41,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
   pause.addEventListener('click',function(){
     const timing = count.innerHTML;
-
     const savedTime = document.createElement("div");
     savedTime.innerText = timing
 
-    const text = document.createElement("textarea");
-    document.innerText = timing
+    timesave.appendChild(savedTime);
+  });
+  
+});
 
-    save.addEventListener('click',function(){
-      textstore.innerText = text
-      console.log("hello")
-
-    })
+function addfun(){
+  console.log("hello");
+  const texts = document.getElementById("timesave");
+  texts.innerHTML += `<input type="text" placeholder="enter">  `;
+}
 
   
 
-    timesave.appendChild(savedTime,text);
-  });
-});
+// .onload
+// count.addEventListener("change",function(){
+//   let selectedtime = this.value;
+//   document.getElementById(countdown).textContent = selectedtime ? selectedtime:"None";
+// })
+
+
+
+
+
+
+
+
+
+
+
+  // save.addEventListener('click',function(){
+  //   console.log("hello")
+  //   const texttimesaved = document.getElementById("textstore");
+  //   timesave.appendChild(savedTime,texttimesaved);
+
+  // })
+
+
+    // save.addEventListener('text',function(){
+    //   textstore.innerText += "<input type='textarea' name='myText' />"
+    //   console.log("hello")
+
+    // });
+
+
+
+
 
 
 

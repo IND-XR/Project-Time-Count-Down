@@ -64,6 +64,13 @@ button{
     
 } */
 
-#textstore{
-background-color: blue;
+#timesave{
+background-color: pink;
+
+/* display: flex; */
+/* display: inline; */
+
+
+
+
 }
