@@ -129,8 +129,9 @@ pause.addEventListener('click',function(){
     savedTime.innerText = timing
   // imesave.appendChild += (  `<input type="text" placeholder="enter">  `)t
   timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
-  }else{
-    console.log(" Select Time ")
+  }else{ 
+    selecttimer.innerHTML="Select First timer";
+      // console.log(" Select Time ")
   }
   //timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
 
@@ -163,9 +164,9 @@ pause.addEventListener('click',function(){
 
 
 // function addfun(){
-//   console.log("hello");
-//   const texts = document.getElementById("timesave");
-//   texts.innerHTML += `<input type="text" placeholder="enter">  `;
+//   console.log("Select Time Fist");
+//   const texts = document.getElementById("selecttimer");
+//   texts.innerHTML += `<h1> selecttimer  </h1> `  ;
 // }
 
 
