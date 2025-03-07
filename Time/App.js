@@ -1,3 +1,6 @@
+
+
+// **************************************************************
 document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("datetime");
   const count = document.getElementById("countdown");
@@ -38,41 +41,147 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   input.addEventListener('change',startCountdown);
 
+// --------------------------------------------------
+// if (_.isEmpty(count) == 0 ) {
+//   pause.addEventListener('click',function(){
+//     const timing = count.innerHTML;
+//     const savedTime = document.createElement("div");
+//     savedTime.innerText = timing
 
-  pause.addEventListener('click',function(){
+//   // imesave.appendChild += (`<input type="text" placeholder="enter">`)
+//   timesave.appendChild(savedTime).innerHTML+=`<input type="text" placeholder="enter">`;
+//   });
+
+// } else {
+//   console.log("Select Time");
+// }
+
+// if (!count || count.innerHTML.trim() === "") {
+//   console.log("Counter is empty");
+// } else {
+//   if (pause && timesave) {
+//     pause.addEventListener("click", function () {
+//       const timing = count.innerHTML;
+
+//       const savedTime = document.createElement("div");
+//       savedTime.innerText = timing;
+
+//       const inputField = document.createElement("input");
+//       inputField.type = "text";
+//       inputField.placeholder = "Enter";
+
+//       savedTime.appendChild(inputField);
+//       timesave.appendChild(savedTime);
+//     });
+//   } else {
+//     console.log("Pause or timesave element is missing");
+//   }
+// }
+// }
+
+// if (pause && timesave && count) {
+//   pause.addEventListener("click", function () {
+//     const timing = count.innerHTML;
+    
+//     const savedTime = document.createElement("div");
+//     savedTime.innerText = timing;
+
+//     const inputField = document.createElement("input");
+//     inputField.type = "text";
+//     inputField.placeholder = "Enter";
+
+//     savedTime.appendChild(inputField);
+//     timesave.appendChild(savedTime);
+//   });
+// } else {
+//   console.log("Anmol");
+// }
+
+
+// function count(){
+//   if ( count == count) {
+//     pause.addEventListener('click',function(){
+//         const timing = count.innerHTML;
+//         const savedTime = document.createElement("div");
+//         savedTime.innerText = timing
+//         // imesave.appendChild += (`<input type="text" placeholder="enter">`)
+//         timesave.appendChild(savedTime).innerHTML+=`<input type="text" placeholder="enter">`;
+//       });
+//   } else {
+//     console.log("Anmol");
+//   }
+// }
+
+  
+   
+
+
+
+// -----------------------------
+
+//************************************************************************
+
+pause.addEventListener('click',function(){
+
+  if(!count || count.innerHTML.trim()  != ""){
     const timing = count.innerHTML;
     const savedTime = document.createElement("div");
     savedTime.innerText = timing
+  // imesave.appendChild += (  `<input type="text" placeholder="enter">  `)t
+  timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
+  }else{
+    console.log(" Select Time ")
+  }
+  //timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
 
-    timesave.appendChild(savedTime);
-  });
+
+//   // const timing = count.innerHTML;
+//   // const savedTime = document.createElement("div");
+//   // savedTime.innerText = timing
+//   // // imesave.appendChild += (  `<input type="text" placeholder="enter">  `)t
+//   // timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
+// });
+
+//*********************************************************************************
+
+  // pause.addEventListener('click',function(){
+  //   const timing = count.innerHTML;
+  //   const savedTime = document.createElement("div");
+  //   savedTime.innerText = timing
+  //   // imesave.appendChild += (  `<input type="text" placeholder="enter">  `)t
+  //   timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
+  // });
   
 });
+});
 
-function addfun(){
-  console.log("hello");
-  const texts = document.getElementById("timesave");
-  texts.innerHTML += `<input type="text" placeholder="enter">  `;
-}
+// function stop(){
+//   if(count == number){
+//     console.log("hello");
+//   }
+//  }
 
+
+// function addfun(){
+//   console.log("hello");
+//   const texts = document.getElementById("timesave");
+//   texts.innerHTML += `<input type="text" placeholder="enter">  `;
+// }
+
+
+
+
+
+
+
+
+
+
+// ***************************************************************
   
 
-// .onload
-// count.addEventListener("change",function(){
-//   let selectedtime = this.value;
-//   document.getElementById(countdown).textContent = selectedtime ? selectedtime:"None";
-// })
-
-
-
-
-
-
-
-
-
-
-
+//
+// 
   // save.addEventListener('click',function(){
   //   console.log("hello")
   //   const texttimesaved = document.getElementById("textstore");
