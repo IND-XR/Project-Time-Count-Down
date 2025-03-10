@@ -1,1 +1,156 @@
 @import "tailwindcss";
+
+
+
+.Wrapper{
+    background-color: rgb(68, 167, 46);
+    display: flex;
+    width: full;
+    align-items: center;
+    justify-content: center;
+    white-space: pre;
+    
+
+}
+ .carousel{
+    white-space: pre;
+    background-color: blueviolet;
+    height: 35rem;
+    width: 93rem;
+    margin:50px;
+    border-radius: 35px;
+    
+    /* position: relative; */
+
+
+    /* padding:4px;
+    margin: 5px;
+    width: 900px;
+    display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.carousel label {
+   
+}
+
+
+
+/* ************************************************* */
+.Countdown-timer{
+    background-color: aqua;
+    height: 29rem;
+    width: 64rem;
+    margin: 40px;
+
+    /* white-space: nowrap; */
+   
+
+    /* display: flex;
+    position:absolute;
+    align-items: center;
+    justify-content: center; */
+
+
+
+    /* margin:4px; */
+    /* padding: 10px; */
+    /* margin: px 40px px 30px; */
+    /* height: 30rem;
+    width :900px; 
+    background-color: aqua;
+    border-radius: 10vh;
+    display:flex;
+    align-items: center; */
+}
+
+/* h1 {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+}  */
+
+.text{
+    position: absolute;
+    top: 120px; left: 170px;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large; 
+    /* position: relative; */
+    /* height: 350px; */
+    /* margin-top: 60px; */
+    /* width: 520px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* font-weight: 400;
+    font-size: xS-large; */
+
+}
+.value{
+    position: absolute;
+    top: 120px; left: 700px;
+    font-weight: 400;
+    font-weight: bolder;
+    background-color: rosybrown;
+    border-radius: 20px;
+    padding: 30px;
+    
+}
+input[type="type"] {
+    text-shadow: 1000cqmax pink;
+    background-color: palevioletred;
+}
+
+#countdown{
+    position: absolute;
+    top:270px;
+     /* top: 50px; left: 9px; */
+    font-weight: bolder;
+    font-size: xx-large;
+    height: 70px;
+    width: 150px;
+    background-color: burlywood;
+
+    /* margin-top: -7%;
+    margin-left: 20%; */
+    /*height: 70px;
+    width: 120px;
+    display: row;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large; */
+} 
+
+.save{
+position: absolute;
+/* top: 40px; left: 40px; */
+left: 100px;
+font-size: x-large;
+background-color: red;
+} 
+
+/* #taming{
+    height: 0%;
+    
+    justify-content: center;
+    
+} */
+
+#timesave{
+background-color: pink;
+/* display: flex; */
+/* display: inline; */
+}
+
+
+#selcettimer{
+
+
+}
