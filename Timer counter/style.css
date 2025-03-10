@@ -3,77 +3,74 @@
 
 
 .Wrapper{
-    background-color: rgb(68, 167, 46);
+    /* background-color: rgb(68, 167, 46); */
     display: flex;
     width: full;
     align-items: center;
     justify-content: center;
-    white-space: pre;
+    white-space: nowrap;
+    margin-left: 0px;
+    padding: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    position: relative;
+    position: sticky;
+}
+
+.Wrapper ::-webkit-scrollbar{
+    display: none;
+}
+
+.time{
+    text-decoration:dotted;
+    font-size: xx-large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 
 }
- .carousel{
-    white-space: pre;
-    background-color: blueviolet;
-    height: 35rem;
-    width: 93rem;
-    margin:50px;
-    border-radius: 35px;
-    
-    /* position: relative; */
-
-
-    /* padding:4px;
-    margin: 5px;
-    width: 900px;
-    display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-
-    /* display: flex;
+h1{
+    position: sticky;
+    top: 10px; left:570px;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large; 
+    display: flex;
     justify-content: center;
-    align-items: center; */
-}
-
-.carousel label {
-   
+    position: sticky;
 }
 
 
+.carousela{
+    margin-left: 1141px;
+    /* background-color: #f8f8ff; */
+    background-color: blueviolet;
+    border-radius: 35px;
+    padding: 9px;
+}
+
+.carouselb{
+    margin-left: 20px;
+    background-color: blueviolet;
+    border-radius: 35px;
+    padding: 9px;
+}
+
+.carousel:first{
+    cursor :pointer;
+    margin-left: 2000px;
+}
 
 /* ************************************************* */
 .Countdown-timer{
-    background-color: aqua;
+    box-shadow:  0px 0px 30px 0px  rgb(135, 64, 64);
+    /* background-color: aqua; */
+    background-color: whitesmoke;
     height: 29rem;
     width: 64rem;
     margin: 40px;
 
-    /* white-space: nowrap; */
-   
 
-    /* display: flex;
-    position:absolute;
-    align-items: center;
-    justify-content: center; */
-
-
-
-    /* margin:4px; */
-    /* padding: 10px; */
-    /* margin: px 40px px 30px; */
-    /* height: 30rem;
-    width :900px; 
-    background-color: aqua;
-    border-radius: 10vh;
-    display:flex;
-    align-items: center; */
 }
-
-/* h1 {
-    height: 110px;
-    display: flex;
-    justify-content: center;
-}  */
 
 .text{
     position: absolute;
@@ -154,3 +151,32 @@ background-color: pink;
 
 
 }
+
+
+
+
+/********************************************
+ .carousel{
+    /* white-space: nowrap;
+    background-color: blueviolet;
+    height: 35rem;
+    width: 93rem;
+    margin:54px;
+    border-radius: 35px;
+    margin-left: 10px; */
+
+    /* position: relative; */
+
+
+    /* padding:4px;
+    margin: 5px;
+    width: 900px;
+    display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+    */
