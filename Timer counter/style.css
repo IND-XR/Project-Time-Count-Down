@@ -30,9 +30,18 @@
 }
 h1{
     position: sticky;
+    position: sticky;
     top: 10px; left:570px;
-    font-size: x-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
+    font-size: x-large; 
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+.head{
+    position: sticky;
+    top: 10px; left:570px;
+    font-family: sans-serif;
     font-size: x-large; 
     display: flex;
     justify-content: center;
@@ -46,6 +55,41 @@ h1{
     background-color: blueviolet;
     border-radius: 35px;
     padding: 9px;
+    }
+
+.savetiming{
+    position: relative;
+    margin-top: 190px;
+    width: 900px;
+    left: 70px; 
+    height: 65px;
+
+    font-size: xx-large;
+    border-radius: 15px;
+    background-color: wheat;
+    overflow-y: auto;
+
+    
+
+    /* position: relative; */
+    /* top: 900px; left: 0px; */
+    /* margin-top: 190px; */
+    /* width: 600px; */
+    /* display: inline-block; */
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+     /* display: inline-flexbox;
+    justify-content: center;
+    align-items: center; */
+ 
+    /* scrollbar-width: none; */
+    /* position: relative; */
+    /* position: sticky;    */
+}
+
+.savetiming .p{
+    color: #FFFFFF;
 }
 
 .carouselb{
@@ -68,35 +112,33 @@ h1{
     height: 29rem;
     width: 64rem;
     margin: 40px;
+    
+
+    overflow-y: auto;
+    /* scrollbar-width: none; */
+    /* position: relative;
+    position: sticky;   */
 
 
 }
 
 .text{
-    position: absolute;
-    top: 120px; left: 170px;
+    position: relative;
+    top: 60px; left: 50px;
     font-size: x-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: x-large; 
-    /* position: relative; */
-    /* height: 350px; */
-    /* margin-top: 60px; */
-    /* width: 520px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* font-weight: 400;
-    font-size: xS-large; */
+    font-family: sans-serif;
+   
+   
 
 }
 .value{
-    position: absolute;
-    top: 120px; left: 700px;
-    font-weight: 400;
+    position: relative;
+    top: 60px; left: 80px;
+    width: 700px;
+    height: 0px;
     font-weight: bolder;
-    background-color: rosybrown;
-    border-radius: 20px;
+    border: 1px solid;
+    border-radius: 10px;
     padding: 30px;
     
 }
@@ -106,39 +148,63 @@ input[type="type"] {
 }
 
 #countdown{
-    position: absolute;
-    top:270px;
-     /* top: 50px; left: 9px; */
+    position: relative;
+    top: 120px; left: 350px;
     font-weight: bolder;
     font-size: xx-large;
     height: 70px;
-    width: 150px;
+    width: 350px;
     background-color: burlywood;
 
-    /* margin-top: -7%;
-    margin-left: 20%; */
-    /*height: 70px;
-    width: 120px;
-    display: row;
-    align-items: center;
-    justify-content: center;
-    font-size: xx-large; */
 } 
 
 .save{
-position: absolute;
-/* top: 40px; left: 40px; */
-left: 100px;
-font-size: x-large;
-background-color: red;
+position: relative;
+top: 170px; left: 450px;
+/* position: absolute;
+top: 450px; left: 700px; */
+width: 135px;
+font-size: xx-large;
+border-radius: 15px;
+border: 2px solid #1A1A1A;
+box-sizing: border-box;
+color: #FFFFFF;
+background-color: black;
+cursor: pointer;
+display: inline-block;
+font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 24px;
+font-weight: 600;
+line-height: normal;
+margin: 0;
+min-height: 60px;
+min-width: 0;
+outline: none;
+padding: 16px 24px;
+text-align: center;
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manpiulation;
+will-change: transform;
 } 
 
-/* #taming{
-    height: 0%;
-    
-    justify-content: center;
-    
-} */
+.save:disabled {
+    pointer-events: none;
+}
+  
+.save:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.save:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
 
 #timesave{
 background-color: pink;
