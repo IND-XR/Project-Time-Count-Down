@@ -1,4 +1,7 @@
 
+// (function time(){
+
+// })();
 
 // **************************************************************
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,7 +44,131 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   input.addEventListener('change',startCountdown);
 
+
+  pause.addEventListener('click', function () {
+    if (count && count.innerHTML.trim() !== "") {
+        const timing = count.innerHTML;
+        const savedTime = document.createElement("div");
+        savedTime.innerHTML = `${timing} <input type="text" placeholder="Enter">`;
+        timesave.appendChild(savedTime);
+    } else {
+        selecttimer.innerHTML = `<p><b>Alert</b><br>First, choose your timer.</p>`;
+        console.log("Select Time");
+
+        // Remove alert after 1 second
+        setTimeout(() => {
+            selecttimer.innerHTML = "";
+            console.log("Alert removed");
+        }, 1000);
+    }
+});
+
+
+// pause.addEventListener('click',function(){
+
+//   if(!count || count.innerHTML.trim()  != ""){
+//   const timing = count.innerHTML;
+//   const savedTime = document.createElement("div");
+//   savedTime.innerText = timing
+//   // imesave.appendChild += (  `<input type="text" placeholder="enter">  `)t
+//   timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
+//   }else{ 
+//     selecttimer.innerHTML="Select First timer";
+//     console.log("Select Time");
+
+//     setInterval(function() {selecttimer.remove()}, 1000);
+
+    
+//     // pause.removeEventListener("click", function());
+//   }
+  // else{
+    
+  // }
+  // document.querySelector(".click").removeAttribute("click");
+
+  //timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
+ 
+});
+
+
+
 // --------------------------------------------------
+
+
+// -----------------------------
+
+//************************************************************************
+
+// pause.addEventListener('click', function () {
+//   for (let i = 0; i < 1; i++) {  // Ensures it runs on every click
+      
+//       if (!count || count.innerHTML.trim() !== "") {
+//           const timing = count.innerHTML;
+//           const savedTime = document.createElement("div");
+//           savedTime.innerText = timing;
+          
+//           // Append input field inside 'timesave'
+//           let inputField = document.createElement("input");
+//           inputField.type = "text";
+//           inputField.placeholder = "Enter";
+          
+//           savedTime.appendChild(inputField);
+//           timesave.appendChild(savedTime);
+          
+//       }else{
+//           selecttimer.innerHTML = `<p><b>Alert</b><br>First Choose your timer</p>`;
+//           console.log("Select Time");
+          
+//           let intervalID = setInterval(() => {
+//               selecttimer.remove();
+//               console.log("Hi, welcome to Itsourcecode!");
+//           }, 1000);
+          
+//           setTimeout(() => {
+//               clearInterval(intervalID);
+//               console.log("This is wrong");
+//           }, 3000);  // Runs for 3 seconds before stopping
+//       }
+//   }
+// });
+
+//***************************************************************
+
+
+
+//   // const timing = count.innerHTML;
+//   // const savedTime = document.createElement("div");
+//   // savedTime.innerText = timing
+//   // // imesave.appendChild += (  `<input type="text" placeholder="enter">  `)t
+//   // timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
+// });
+
+//*********************************************************************************
+
+  // pause.addEventListener('click',function(){
+  //   const timing = count.innerHTML;
+  //   const savedTime = document.createElement("div");
+  //   savedTime.innerText = timing
+  //   // imesave.appendChild += (  `<input type="text" placeholder="enter">  `)t
+  //   timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
+  // });
+  
+
+// function stop(){
+//   if(count == number){
+//     console.log("hello");
+//   }
+//  }
+
+
+// function addfun(){
+//   console.log("Select Time Fist");
+//   const texts = document.getElementById("selecttimer");
+//   texts.innerHTML += `<h1> selecttimer  </h1> `  ;
+// }
+
+// ***********************************************
+
 // if (_.isEmpty(count) == 0 ) {
 //   pause.addEventListener('click',function(){
 //     const timing = count.innerHTML;
@@ -114,63 +241,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
    
-
-
-
-// -----------------------------
-
-//************************************************************************
-
-pause.addEventListener('click',function(){
-
-  if(!count || count.innerHTML.trim()  != ""){
-    const timing = count.innerHTML;
-    const savedTime = document.createElement("div");
-    savedTime.innerText = timing
-  // imesave.appendChild += (  `<input type="text" placeholder="enter">  `)t
-  timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
-  }else{ 
-    selecttimer.innerHTML="Select First timer";
-      // console.log(" Select Time ")
-  }
-  //timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
-
-
-//   // const timing = count.innerHTML;
-//   // const savedTime = document.createElement("div");
-//   // savedTime.innerText = timing
-//   // // imesave.appendChild += (  `<input type="text" placeholder="enter">  `)t
-//   // timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
-// });
-
-//*********************************************************************************
-
-  // pause.addEventListener('click',function(){
-  //   const timing = count.innerHTML;
-  //   const savedTime = document.createElement("div");
-  //   savedTime.innerText = timing
-  //   // imesave.appendChild += (  `<input type="text" placeholder="enter">  `)t
-  //   timesave.appendChild(savedTime).innerHTML +=`<input type="text" placeholder="enter">`;
-  // });
-  
-});
-});
-
-// function stop(){
-//   if(count == number){
-//     console.log("hello");
-//   }
-//  }
-
-
-// function addfun(){
-//   console.log("Select Time Fist");
-//   const texts = document.getElementById("selecttimer");
-//   texts.innerHTML += `<h1> selecttimer  </h1> `  ;
-// }
-
-
-
 
 
 

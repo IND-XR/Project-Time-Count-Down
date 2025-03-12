@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
 
     <!-- Linking SwiperJs CSS -->
     <!-- <link rel="stylesheet" href="style.css" /> -->
-    <link rel="stylesheet" href="style.css">
-  </head>
+  <link rel="stylesheet" href="style.css">
+</head>
 
   <body>
     <nav class="flex w-full border-b- border-black-600 shadow-xl">
@@ -53,39 +53,25 @@
     </h1>
 
     <section class=" ">  <!-- flex justify-center w-full-->
-
       <div class="Wrapper">
-
         <div class="carousela">
           <h1 class="head"> Counterdown Timer</h1>
-          <label for="">
+
           <div class="Countdown-timer"> 
-          <label class="text    font-medium" for="datetime" >Select the Target : </label>
+          <label class="text    font-medium" for="datetime">Select the Target : </label>
           <input class="value"  type="datetime-local" id="datetime" />
-          <div id="countdown"> addTime </div>
-             <button class="save" role="button">Save</button>
-             <div id="timesave"></div>
-             <div id="selcettimer"></div> 
+          <div id="countdown">  </div>
+          <button id="save" >Save</button>
+          <button id="Restart" > Restart  </button>   
 
-             <div class="savetiming">
 
-              <div id="timesave"></div>
-             <div id="selcettimer"></div> 
-              <!-- <p>
-                This paragraph
-                contains         
-                a lot of spaces
-                in the source         
-                code,
-                but the        
-                browser
-                ignores it.
-                </p>
-   -->
+            <div class="savetiming">
+              <div id="timesave"> </div>
             </div>
+
+
+            <div id="selecttimer"></div>
           </div>
-          
-          
         </div>
 
         <div class="carouselb">
@@ -99,13 +85,6 @@
              <div id="selcettimer"></div>  -->
           </div>
         </div>
-
-        <!-- <div class="carousel">
-          <div class="Countdown-timer"> 
-          
-          </div>
-        </div>  -->
-
 
       </div>
     </section>
@@ -273,6 +252,5 @@
 
     <script src="script.js"></script>
     <!-- Linking Swiper\JS Script -->
-
   </body>
 </html>

@@ -63,6 +63,66 @@ button{
     justify-content: center;
     
 } */
+#selecttimer{
+    position: absolute;
+    top: 300px;
+    right:340px;
+    width: 199px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 14, 14) (48, 183, 69);
+    border-radius: 12px;
+    box-shadow: 0 9px 20px -5px rgba(194, 113, 113, 0.1);
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+/* #selecttime::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 3%;
+    width: 100%;
+    background-color: red; */
+  /* }
+  #selecttime:before {
+    animation: progress 2s linear forwards;
+  } */
+
+/* #selecttime  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+  }
+
+
+  #selecttime:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 300%;
+    width: 100%;
+    background-color: red;
+  }
+  #selecttime:before {
+    animation: progress 2s linear forwards;
+  }
+   */
+  /* @keyframes progress {
+    100% {
+      right: 100%;
+    }
+  } */
+
+
+
+
+
 
 #timesave{
 background-color: pink;
