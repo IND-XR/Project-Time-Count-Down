@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./output.css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
 
     <!-- Linking SwiperJs CSS -->
     <!-- <link rel="stylesheet" href="style.css" /> -->
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
   <body>
     <nav class="flex w-full border-b- border-black-600 shadow-xl">
@@ -48,36 +48,42 @@
         ! Sign Up
       </button>
     </nav>
-    <h1 class="time  flex justify-center p-5 m-2 mt-6 font-bold text-3xl">
-      Timer Tracker
-    </h1>
+    <h1 class="time flex p-5 m-2 mt-6 font-bold text-3xl">Timer Tracker</h1>
 
-    <section class=" ">  <!-- flex justify-center w-full-->
+    <section class=" ">
+      <!-- flex justify-center w-full-->
       <div class="Wrapper">
-        <div class="carousela">
-          <h1 class="head"> Counterdown Timer</h1>
+        <div  class="carousela">
+          <h1 class="head">Counterdown Timer</h1>
 
-          <div class="Countdown-timer"> 
-          <label class="text    font-medium" for="datetime">Select the Target : </label>
-          <input class="value"  type="datetime-local" id="datetime" />
-          <div id="countdown">  </div>
-          <button id="save" >Save</button>
-          <button id="Restart" > Restart  </button>   
+          <form id="myForm" action="">
 
+            <div class="Countdown-timer">
+              <label class="text font-medium" for="datetime"
+                >Select the Target :
+              </label>
+              <input class="value" type="datetime-local" id="datetime" />
+              <div id="countdown"></div>
+              <button id="save" type="button"   >Save</button>
+              
+              <button id="Restart" onclick="fromreset()"> 
+                Restart
+              </button>  
 
-            <div class="savetiming">
-              <div id="timesave"> </div>
+              <div class="savetiming">
+                <div id="timesave"></div>
+              </div>
+
+              <div id="selecttimer"></div>
             </div>
-
-
-            <div id="selecttimer"></div>
-          </div>
+          </form>
+          
         </div>
 
         <div class="carouselb">
-          <h1> StopWatch </h1>
-          <div class="Countdown-timer"> 
-          <!-- <label class="text    font-medium italic" for="datetime" >Set the target date and time to start the timer." </label>
+          <h1 class="head">StopWatch</h1>
+          <div class="Countdown-timer">
+            <!-- <label class="text    font-medium italic" for="datetime" >Set the target date and time to start the timer." </label>
           <input class="value"  type="datetime-local" id="datetime" />
           <div id="countdown"> addTime </div>
              <button class="save">Time Save</button>
@@ -86,6 +92,13 @@
           </div>
         </div>
 
+        <div class="space">
+          <p>
+            &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
       </div>
     </section>
 

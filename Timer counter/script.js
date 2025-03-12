@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const pause = document.getElementById("save");
   const timesave = document.getElementById("timesave");
 
-  const Restart = document.getElementById("Restart");
+  // const resetForm = document.getElementById("Restart");
+
+
 
   function calculateTimeRemaining() {
     const tragetDate = new Date(input.value);
@@ -87,9 +89,40 @@ document.addEventListener("DOMContentLoaded", function () {
           console.log("Alert removed");
       }, 3000);
     }
-
-    });
+  
   });
+  
+ 
+});
+
+ 
+function formreset() {
+  console.log("hello");
+  document.getElementById("myForm").reset();
+}
+
+  // Restar.addEventListener('Click',function(){
+  //   this.fromObject.reset()
+
+  //   console.log("rest");
+    // const Restar = document.getElementById("Rest").reset();
+
+    // var ResetCounter = ( ) => {
+    //   value = second
+    //   localStorage.removeItem("counter");
+    // }
+
+  // });
+
+
+
+
+
+
+
+
+
+
 
   // ****************************************************
 
