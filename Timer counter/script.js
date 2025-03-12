@@ -42,19 +42,31 @@ document.addEventListener("DOMContentLoaded", function () {
   pause.addEventListener('click', function () {
 
     if(!count || count.innerHTML.trim()  !== ""){
-      const timing = count.innerHTML;
+      const timing = count.innerHTML.trim();
 
+      const savedTimeContainer = document.createElement("div");
+      savedTimeContainer.style.display = "flex"; 
+      savedTimeContainer.style.alignItems = "center"; 
+      savedTimeContainer.style.gap = "10px"; 
 
-      const savedTime = document.createElement("div");
-      savedTime.innerText = timing
+      const label = document.createElement("span");
+      label.innerText = "Saved Timer:";
+      label.style.fontWeight = "bold";
 
-      
+      const savedTime = document.createElement("span");
+      savedTime.innerText = timing;
+
       const inputField = document.createElement("input");
       inputField.type = "text";
-      inputField.placeholder = "enter";
+      inputField.placeholder = "Enter text";
+      inputField.style.padding = "5px"; 
+      inputField.style.borderRadius = "5px"; 
 
-      savedTime.appendChild(inputField); // Append input field to savedTime div
-      timesave.appendChild(savedTime);   // Append savedTime to timesave container
+      savedTimeContainer.appendChild(label);
+      savedTimeContainer.appendChild(savedTime);
+      savedTimeContainer.appendChild(inputField);
+
+      timesave.appendChild(savedTimeContainer);
 
 
      }else{    
@@ -69,7 +81,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // ****************************************************
 
+  // if(!count || count.innerHTML.trim()  !== ""){
+  //   const timing = count.innerHTML;
+
+
+  //   const savedTime = document.createElement("div");
+  //   savedTime.innerText = timing
+
+    
+  //   const inputField = document.createElement("input");
+  //   inputField.type = "text";
+  //   inputField.placeholder = "enter";
+
+  //   savedTime.appendChild(inputField); // Append input field to savedTime div
+  //   timesave.appendChild(savedTime);   // Append savedTime to timesave container
 
 
 // **********************************************
