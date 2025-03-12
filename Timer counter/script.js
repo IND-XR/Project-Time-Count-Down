@@ -48,35 +48,45 @@ document.addEventListener("DOMContentLoaded", function () {
       savedTimeContainer.style.display = "flex"; 
       savedTimeContainer.style.alignItems = "center"; 
       savedTimeContainer.style.gap = "10px"; 
+      savedTimeContainer.style.color = 'black'; 
 
       const label = document.createElement("span");
+      label.style.gap = "70px";
       label.innerText = "Saved Timer:";
+      label.style.gap = "70px"; 
       label.style.fontWeight = "bold";
 
       const savedTime = document.createElement("span");
+      savedTime.style.color = 'black';
+      savedTime.style.backgroundColor = '#ffdeda ';
+      savedTime.style.outline = '2px solid ';
+
+
+      savedTime.style.margin = '16px';
+      savedTime.style.padding = '16px';
+      savedTime.style.borderradius = '20px';
       savedTime.innerText = timing;
 
       const inputField = document.createElement("input");
       inputField.type = "text";
       inputField.placeholder = "Enter text";
-      inputField.style.padding = "5px"; 
-      inputField.style.borderRadius = "5px"; 
-
+      inputField.style.padding = "19px"; 
+      inputField.decoration= "dotted";
+      inputField.border = "solid"; 
+  
       savedTimeContainer.appendChild(label);
       savedTimeContainer.appendChild(savedTime);
       savedTimeContainer.appendChild(inputField);
 
       timesave.appendChild(savedTimeContainer);
-
-
-     }else{    
+    }else{    
       selecttimer.innerHTML="<p>  <b> Alert </b> <br> First Choose your timer </p> " ;
       console.log("Select Time");
         setTimeout(() => {
           selecttimer.innerHTML = "";
           console.log("Alert removed");
       }, 3000);
-      }
+    }
 
     });
   });
