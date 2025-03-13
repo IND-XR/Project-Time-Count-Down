@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 
+.nav{
+    display: flex;
+    justify-content: start;
+}
 
 .Wrapper{
     /* background-color: rgb(68, 167, 46); */
@@ -66,9 +70,6 @@ h1{
     border-radius: 35px;
     padding: 9px;
     }
-
-
-
 
 .carouselb{
     margin-left: 20px;

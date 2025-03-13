@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+   
+</head>
+<body>
+    <nav class="flex w-full border-b- border-black-600 shadow-xl">
+        <img
+          class="text-3xl relative left-11 h-20 p-0 m-0"
+          src="src/filan.png"
+          alt=""
+        />
+        <!--  // w-20   bg-orange-50 -->
+        <h2 class="text-3xl relative left-7 w-90 font-bold h-20 p-5 m-0">
+          Time Tracker
+        </h2>
+  
+        <div
+          class="nav flex justify-start place-content-center gap-8 relative h-20 left-7 p-5 w-full"
+        >
+          <a class="text-xl font-medium place-content-center text-gray-500 hover:underline"
+             href="Home.html">
+            Home</a
+          >
+          <a
+            class="text-xl font-medium place-content-center text-gray-500 hover:underline"
+            href="Track.html"
+            id="navigateBtn"
+            >Track</a
+          >
+          <a
+            class="text-xl font-medium place-content-center text-gray-500 hover:underline"
+            href="Results.html"
+            >Results</a
+          >
+        </div>
+  
+  
+        <button
+          class="bg-red-500 w-80 relative rounded-md h-10 p-0 m-5 ring-2 ring-blue-500 text-white float-end"
+        >
+          ! Sign Up
+        </button>
+      </nav>
+      <h1 class="time flex p-5 m-2 mt-6 font-bold text-3xl">Timer Tracker</h1>
+
+      <section class=" ">
+        <!-- flex justify-center w-full-->
+        <div class="Wrapper">
+        <div  class="carousela">
+        <h1 class="head">Counterdown Timer</h1>
+  
+        <form id="myForm" action="">
+  
+            <div class="Countdown-timer">
+                <label class="text font-medium" for="datetime">Select the Target : </label>
+                
+                <input class="value" type="datetime-local" id="datetime" />
+                <div id="countdown"></div>
+                <button id="save" type="button"   >Save</button>
+                
+                <button id="Restart" onclick="fromreset()"> 
+                  Restart
+                </button>  
+  
+                <div class="savetiming">
+                  <div id="timesave"></div>
+                </div>
+  
+                <div id="selecttimer"></div>
+              </div>
+            </form>
+            
+          </div>
+  
+          <div class="carouselb">
+            <h1 class="head">StopWatch</h1>
+            <div class="Countdown-timer">
+              <!-- <label class="text    font-medium italic" for="datetime" >Set the target date and time to start the timer." </label>
+            <input class="value"  type="datetime-local" id="datetime" />
+            <div id="countdown"> addTime </div>
+               <button class="save">Time Save</button>
+               <div id="timesave"></div>
+               <div id="selcettimer"></div>  -->
+            </div>
+          </div>
+  
+          <div class="space">
+            <p>
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            </p>
+          </div>
+        </div>
+      </section>
+  
+    
+    <script src="script.js"></script>
+</body>
+</html>
